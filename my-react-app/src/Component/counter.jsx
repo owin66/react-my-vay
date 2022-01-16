@@ -4,8 +4,6 @@ import React, {useState} from "react";
 const Counter = () => {
     const [count, setCount] = useState(0)
 
-
-
     const formatCount = () => {
         return count === 0 ? 'empty' : count;
     }
@@ -23,7 +21,7 @@ const Counter = () => {
     }
 
     return (
-        <>
+        <div>
             <span className={getBageClasses()}>{formatCount()}</span>
             <button
                 className='btn btn-primary btn-sm m-2'
@@ -35,7 +33,7 @@ const Counter = () => {
                 onClick={handleDecrement}>
                 -
             </button>
-        </>
+        </div>
     );
 }
 
