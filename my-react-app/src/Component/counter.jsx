@@ -35,8 +35,14 @@ const Counter = (props) => {
                 onClick={handleDecrement}>
                 -
             </button>
-        </div>
-    );
+            <button
+                className='btn btn-danger btn-sm m-2'
+                onClick={props.onDelete}>
+                Delete
+            </button>
+</div>
+)
+    ;
 }
 
 export default Counter
