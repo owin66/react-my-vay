@@ -1,5 +1,4 @@
 import React from 'react';
-import Counter from "./Component/counter";
 import CounterList from "./Component/counterList";
 
 const App = () => {

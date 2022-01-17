@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 
 const Counter = (props) => {
+
     const [value, setValue] = useState(props.value)
 
     const formatValue = () => {
@@ -22,6 +23,7 @@ const Counter = (props) => {
 
     return (
         <div>
+            <span>{props.name}</span>
             <span className={getBageClasses()}>{formatValue()}</span>
             <button
                 className='btn btn-primary btn-sm m-2'
