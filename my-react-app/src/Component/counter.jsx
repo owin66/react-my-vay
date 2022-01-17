@@ -37,7 +37,7 @@ const Counter = (props) => {
             </button>
             <button
                 className='btn btn-danger btn-sm m-2'
-                onClick={props.onDelete}>
+                onClick={()=>props.onDelete(props.id)}>
                 Delete
             </button>
 </div>
